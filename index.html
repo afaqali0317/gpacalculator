@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPA Calculator</title>
+<style>
+    table {border: 3px double black;padding:0%;font-size: x-large;font-weight:200; justify-content: center;}
+    td,th {padding:0%;min-width:auto;: 200px;padding:0px;margin: 0px; justify-content: center;}
+    /* tr,#brd {border: 2px solid black;} */
+    #tab-content1 {padding: 2px;margin: 0px;min-height: 100px;font-size: 60px;}
+    .tab-content2 {width: 50px;}
+    .result {font-size: 30px;font-weight: 500;color: rgb(9, 63, 110);}
+
+</style>
+</head>
+
+
+<!-- ================================================================================================= -->
+<body><center>
+  <h1>GPA Calculator</h1>
+  <h2>Best of luck for your Result: </h2>
+  <div class="result"> Your GPA is : <span id="result" class="result">0.00</span></div>
+  <Div>
+<table id="calculator">
+    <tbody id="tbdy">
+  <tr><th>S.no</th><th>Subjects</th>
+    <th>Credit Hrs</th>
+    <th>Grade</th>
+  </tr>
+
+  <tr><td>1</td>
+    <td><input type="text" id="sub1" class="tab-content1"></td>
+    <td><input type="number" id="ch1" class="tab-content2"></td>
+    <td><select id="sel1" class="tab-content3">
+      <option value="4">A</option>
+      <option value="3.67">A-</option>
+      <option value="3.33">B+</option>
+      <option value="3.00">B</option>
+      <option value="2.67">B-</option>
+      <option value="2.33">C+</option>
+      <option value="2.00">C</option>
+      <option value="1.67">C-</option>
+      <option value="1.33">D+</option>
+      <option value="1.00">D</option>
+      <option value="0.00">F</option>
+      <option value="0.00">P</option>
+      </select></td></tr>
+
+  <tr><td>2</td><td>
+    <input type="text" id="sub2" class="tab-content1"> </td>
+    <td><input type="number" id="ch2" class="tab-content2"></td>
+    <td><select id="sel2" class="tab-content3">
+      <option value="4">A</option>
+      <option value="3.67">A-</option>
+      <option value="3.33">B+</option>
+      <option value="3.00">B</option>
+      <option value="2.67">B-</option>
+      <option value="2.33">C+</option>
+      <option value="2.00">C</option>
+      <option value="1.67">C-</option>
+      <option value="1.33">D+</option>
+      <option value="1.00">D</option>
+      <option value="0.00">F</option>
+      <option value="0.00">P</option>
+    </select></td></tr>
+
+
+  <tr id="brd"><td>3</td><td>
+    <input type="text" id="sub3" class="tab-content1"></td>
+    <td><input type="number" id="ch3" class="tab-content2"></td>
+    <td><select id="sel3" class="tab-content3">
+      <option value="4">A</option>
+      <option value="3.67">A-</option>
+      <option value="3.33">B+</option>
+      <option value="3.00">B</option>
+      <option value="2.67">B-</option>
+      <option value="2.33">C+</option>
+      <option value="2.00">C</option>
+      <option value="1.67">C-</option>
+      <option value="1.33">D+</option>
+      <option value="1.00">D</option>
+      <option value="0.00">F</option>
+      <option value="0.00">P</option>
+  </select></td></tr>
+
+
+  <tr><td>4</td><td>
+    <input type="text" id="sub4" class="tab-content1"></td>
+    <td><input type="number" id="ch4" autocomplete="0" class="tab-content2"></td>
+    <td><select id="sel4" class="tab-content3">
+      <option value="4">A</option>
+      <option value="3.67">A-</option>
+      <option value="3.33">B+</option>
+      <option value="3.00">B</option>
+      <option value="2.67">B-</option>
+      <option value="2.33">C+</option>
+      <option value="2.00">C</option>
+      <option value="1.67">C-</option>
+      <option value="1.33">D+</option>
+      <option value="1.00">D</option>
+      <option value="0.00">F</option>
+      <option value="0.00">P</option>
+  </select></td></tr>
+
+  
+  <tr id="samplerow"><td >5</td><td>
+    <input type="text" id="sub5" class="tab-content1"></td>
+    <td><input type="number" id="ch5" class="tab-content2"></td>
+    <td><select id="sel5" class="tab-content3">
+      <option value="4">A</option>
+      <option value="3.67">A-</option>
+      <option value="3.33">B+</option>
+      <option value="3.00">B</option>
+      <option value="2.67">B-</option>
+      <option value="2.33">C+</option>
+      <option value="2.00">C</option>
+      <option value="1.67">C-</option>
+      <option value="1.33">D+</option>
+      <option value="1.00">D</option>
+      <option value="0.00">F</option>
+      <option value="0.00">P</option>
+  </select></td></tr>
+
+
+</tbody>
+</table>
+<button id="addsub" onclick="addsub()" >Add Subjects</button>
+<button id="calc" onclick="calc()" >Calculate</button>
+
+</Div>
+
+
+</center>
+</body>
+<!-- ===================================================================================== -->
+<script src="script.js">
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</html>
